@@ -28,7 +28,7 @@
                     "type": "git",
                     "branch": "gnome-3-34",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-2048.git",
-                    "commit": "251be6d60e032fd0fe20b5fb1c4fc2020d0306fc"
+                    "commit": "0a06a44f89b8f63398417bef6d5961793cad62a5"
                 }
             ]
         }
