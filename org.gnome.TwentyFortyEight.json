@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.TwentyFortyEight",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.34",
+    "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-2048",
     "finish-args": [
@@ -12,11 +12,13 @@
     "modules": [
         {
             "name": "libgnome-games-support",
+            "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://gitlab.gnome.org/GNOME/libgnome-games-support/-/archive/2db73333f2094fcae071028432b29cd82574c610/libgnome-games-support-2db73333f2094fcae071028432b29cd82574c610.zip",
-                    "sha256": "38e16ce14f118655d04262acd73950ba45866c232db140f5d849716a768eba27"
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/libgnome-games-support.git",
+                    "tag": "1.6.0.1",
+                    "commit": "0aca5d736973e69972e1dd79f55a233971fbae7e"
                 }
             ]
         },
@@ -26,9 +28,9 @@
             "sources": [
                 {
                     "type": "git",
-                    "branch": "gnome-3-34",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-2048.git",
-                    "commit": "0a06a44f89b8f63398417bef6d5961793cad62a5"
+                    "tag": "3.36.0",
+                    "commit": "0ed3287d2f6dbce71a1866607127d079b33f4518"
                 }
             ]
         }
