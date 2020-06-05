@@ -6,7 +6,8 @@
     "command": "gnome-2048",
     "finish-args": [
         "--socket=wayland",
-        "--share=ipc", "--socket=x11",
+        "--share=ipc", 
+        "--socket=fallback-x11",
         "--device=dri"
     ],
     "modules": [
@@ -15,10 +16,9 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libgnome-games-support.git",
-                    "tag": "1.6.0.1",
-                    "commit": "0aca5d736973e69972e1dd79f55a233971fbae7e"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgnome-games-support/1.6/libgnome-games-support-1.6.1.tar.xz",
+                    "sha256": "fb686af62e24dc33f26c581aa019fcdf3605787dd76cb59ac99a8a34d1b808bf"
                 }
             ]
         },
@@ -27,10 +27,9 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gnome-2048.git",
-                    "tag": "3.36.0",
-                    "commit": "0ed3287d2f6dbce71a1866607127d079b33f4518"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-2048/3.36/gnome-2048-3.36.3.tar.xz",
+                    "sha256": "10d4b03b43fb6917e3a4e7e3d949dea4c6784fd0662b3df9183c9e7ac15e3770"
                 }
             ]
         }
