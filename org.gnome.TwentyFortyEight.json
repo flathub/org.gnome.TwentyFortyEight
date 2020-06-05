@@ -6,7 +6,8 @@
     "command": "gnome-2048",
     "finish-args": [
         "--socket=wayland",
-        "--share=ipc", "--socket=x11",
+        "--share=ipc", 
+        "--socket=fallback-x11",
         "--device=dri"
     ],
     "modules": [
