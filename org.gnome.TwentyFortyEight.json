@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.TwentyFortyEight",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "40",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-2048",
     "finish-args": [
@@ -17,8 +17,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgnome-games-support/1.6/libgnome-games-support-1.6.1.tar.xz",
-                    "sha256": "fb686af62e24dc33f26c581aa019fcdf3605787dd76cb59ac99a8a34d1b808bf"
+                    "url": "https://download.gnome.org/sources/libgnome-games-support/1.8/libgnome-games-support-1.8.1.tar.xz",
+                    "sha256": "c37b7acd3ba7eb12207f5d7bb020535fa5783b0bd897e51b2bd629ce119a413f"
                 }
             ]
         },
@@ -28,8 +28,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-2048/3.36/gnome-2048-3.36.3.tar.xz",
-                    "sha256": "10d4b03b43fb6917e3a4e7e3d949dea4c6784fd0662b3df9183c9e7ac15e3770"
+                    "url": "https://download.gnome.org/sources/gnome-2048/3.38/gnome-2048-3.38.2.tar.xz",
+                    "sha256": "e27367f5c09a0136581d335f57913aaf5a5f180e3299cc5c1a30d8583e79ae68"
                 }
             ]
         }
