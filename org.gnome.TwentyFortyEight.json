@@ -1,12 +1,12 @@
 {
     "app-id": "org.gnome.TwentyFortyEight",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-2048",
     "finish-args": [
         "--socket=wayland",
-        "--share=ipc", 
+        "--share=ipc",
         "--socket=fallback-x11",
         "--device=dri"
     ],
