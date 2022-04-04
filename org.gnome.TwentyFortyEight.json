@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.TwentyFortyEight",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-2048",
     "finish-args": [
@@ -17,8 +17,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgnome-games-support/1.8/libgnome-games-support-1.8.1.tar.xz",
-                    "sha256": "c37b7acd3ba7eb12207f5d7bb020535fa5783b0bd897e51b2bd629ce119a413f"
+                    "url": "https://download.gnome.org/sources/libgnome-games-support/1.8/libgnome-games-support-1.8.2.tar.xz",
+                    "sha256": "28434604a7b038731ac0231731388ff104f565bb2330cc24e78cda04cfd3ef7d"
                 }
             ]
         },
