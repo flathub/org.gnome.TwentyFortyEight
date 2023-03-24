@@ -1,0 +1,18 @@
+--- gnome-2048/data/meson.build-orig	2023-03-24 15:12:34.881837495 -0400
++++ gnome-2048/data/meson.build	2023-03-24 15:12:50.889093701 -0400
+@@ -17,7 +17,6 @@
+ 
+ # Desktop file
+ desktop_file = i18n.merge_file(
+-  'desktop-file',
+   input: 'org.gnome.TwentyFortyEight.desktop.in',
+   output: 'org.gnome.TwentyFortyEight.desktop',
+   install: true,
+@@ -37,7 +36,6 @@
+ 
+ # AppData file
+ appdata_file = i18n.merge_file(
+-  'appdata-file',
+   input: 'org.gnome.TwentyFortyEight.appdata.xml.in',
+   output: 'org.gnome.TwentyFortyEight.appdata.xml',
+   install: true,
