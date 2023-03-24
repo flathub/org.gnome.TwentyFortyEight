@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.TwentyFortyEight",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-2048",
     "finish-args": [
@@ -31,6 +31,10 @@
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-2048/3.38/gnome-2048-3.38.2.tar.xz",
                     "sha256": "e27367f5c09a0136581d335f57913aaf5a5f180e3299cc5c1a30d8583e79ae68"
+                },
+                {
+                    "type": "patch",
+                    "path": "gnome-2048-meson.patch"
                 }
             ]
         }
