@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.TwentyFortyEight",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-2048",
     "finish-args": [
@@ -13,11 +13,8 @@
     "cleanup": [
         "/include",
         "/lib/pkgconfig",
-        "/share/pkgconfig",
-        "/share/aclocal",
-        "/man",
         "/share/man",
-        "/share/gtk-doc",
+        "/share/vala",
         "*.la",
         "*.a"
     ],
