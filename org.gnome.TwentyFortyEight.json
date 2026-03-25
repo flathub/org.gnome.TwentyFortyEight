@@ -1,8 +1,11 @@
 {
     "app-id": "org.gnome.TwentyFortyEight",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable"
+    ],
     "command": "gnome-2048",
     "finish-args": [
         "--socket=wayland",
@@ -11,41 +14,34 @@
         "--device=dri"
     ],
     "cleanup": [
-        "/include",
-        "/lib/pkgconfig",
-        "/share/pkgconfig",
-        "/share/aclocal",
-        "/man",
-        "/share/man",
-        "/share/gtk-doc",
-        "*.la",
-        "*.a"
+        "/share/man"
     ],
-    "modules": [
-        "shared-modules/clutter/clutter.json",
-        {
-            "name": "libgnome-games-support",
-            "buildsystem": "meson",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgnome-games-support/1.8/libgnome-games-support-1.8.2.tar.xz",
-                    "sha256": "28434604a7b038731ac0231731388ff104f565bb2330cc24e78cda04cfd3ef7d"
-                }
-            ]
+    "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin",
+        "env": {
+            "CARGO_HOME": "/run/build/rust-flatpak/cargo"
         },
+        "test-args": [
+            "--socket=x11"
+        ]
+    },
+    "modules": [
         {
             "name": "gnome-2048",
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-2048/3.38/gnome-2048-3.38.2.tar.xz",
-                    "sha256": "e27367f5c09a0136581d335f57913aaf5a5f180e3299cc5c1a30d8583e79ae68"
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gnome-2048.git",
+                    "commit": "ac914aa5b4b9e6bdb936465afd903d46022d76b4"
                 },
+                "generated-sources.json",
                 {
-                    "type": "patch",
-                    "path": "gnome-2048-meson.patch"
+                    "type": "shell",
+                    "commands": [
+                        "mkdir .cargo",
+                        "cp cargo/config .cargo/"
+                    ]
                 }
             ]
         }
