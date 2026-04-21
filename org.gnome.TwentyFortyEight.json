@@ -33,7 +33,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-2048.git",
-                    "commit": "ac914aa5b4b9e6bdb936465afd903d46022d76b4"
+                    "tag": "50.2",
+                    "commit": "257a83059ee4e00286140f5d490f433947d04822"
                 },
                 "generated-sources.json",
                 {
